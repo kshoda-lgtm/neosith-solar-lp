@@ -60,10 +60,10 @@ export default function Home() {
             />
             <div className="absolute inset-0 bg-black/30" />
           </div>
-          <div className="container relative z-10 text-center text-white">
-            <div className="inline-block relative p-12 mb-6">
+          <div className="container relative z-10 text-center text-white px-2 sm:px-4">
+            <div className="inline-block relative p-6 sm:p-12 mb-6">
               <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.2)_0%,_rgba(255,255,255,0)_70%)] backdrop-blur-[2px] rounded-full pointer-events-none"></div>
-              <h1 className="relative z-10 font-heading text-2xl sm:text-3xl md:text-6xl font-bold leading-tight text-white drop-shadow-md">
+              <h1 className="relative z-10 font-heading text-[1.75rem] sm:text-4xl md:text-6xl font-bold leading-tight text-white drop-shadow-md tracking-tight">
                 <span className="inline-block">太陽光発電の効率を、</span><br />
                 <span className="inline-block"><span className="text-[#54ff0a] drop-shadow-md">草刈り</span>で最大化する。</span>
               </h1>
