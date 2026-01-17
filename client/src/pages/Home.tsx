@@ -25,10 +25,9 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Sun className="h-6 w-6 text-secondary" />
-            <div className="flex flex-col">
-              <span className="font-heading font-bold text-xl text-primary leading-none">株式会社エイジフル</span>
-              <span className="text-[10px] text-muted-foreground font-medium">株式会社ネオシス メンテナンス部門</span>
+            <img src="/images/logo-ageful.png" alt="株式会社エイジフル" className="h-12 w-auto" />
+            <div className="flex flex-col justify-center h-12">
+              <span className="text-[10px] text-muted-foreground font-medium leading-tight">株式会社ネオシス<br/>メンテナンス部門</span>
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
@@ -61,8 +60,9 @@ export default function Home() {
             <div className="absolute inset-0 bg-black/30" />
           </div>
           <div className="container relative z-10 text-center text-white">
-            <div className="inline-block bg-white/20 backdrop-blur-md border border-white/50 p-8 rounded-xl mb-6 shadow-2xl">
-              <h1 className="font-heading text-4xl md:text-6xl font-bold leading-tight text-white drop-shadow-md">
+            <div className="inline-block relative p-12 mb-6">
+              <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.2)_0%,_rgba(255,255,255,0)_70%)] backdrop-blur-[2px] rounded-full pointer-events-none"></div>
+              <h1 className="relative z-10 font-heading text-4xl md:text-6xl font-bold leading-tight text-white drop-shadow-md">
                 太陽光発電の効率を、<br />
                 <span className="text-[#54ff0a] drop-shadow-md">草刈り</span>で最大化する。
               </h1>
