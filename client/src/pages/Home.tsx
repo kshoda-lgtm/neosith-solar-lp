@@ -373,11 +373,11 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
-                <Sun className="h-6 w-6 text-secondary" />
-                <div className="flex flex-col">
-                <span className="font-heading font-bold text-xl text-white leading-none">株式会社エイジフル</span>
-                <span className="text-xs text-gray-400 mt-1">株式会社ネオシス メンテナンス部門</span>
-              </div>
+                <img src="/images/logo-ageful.png" alt="株式会社エイジフル" className="h-12 w-auto brightness-0 invert" />
+                <div className="flex flex-col justify-center h-12">
+                  <span className="font-heading font-bold text-lg text-white leading-tight">株式会社エイジフル</span>
+                  <span className="text-[10px] text-gray-400 font-medium leading-tight">株式会社ネオシス<br/>メンテナンス部門</span>
+                </div>
               </div>
               <p className="mb-4 text-sm leading-relaxed">
                 太陽光発電所の除草・管理を通じて、<br />
