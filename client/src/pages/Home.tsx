@@ -61,7 +61,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-black/30" />
           </div>
           <div className="container relative z-10 text-center text-white">
-            <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">
+            <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg" style={{color: '#54ff0a'}}>
               太陽光発電の効率を、<br />
               <span className="text-secondary">草刈り</span>で最大化する。
             </h1>
@@ -327,27 +327,33 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-4">
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid md:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <Label htmlFor="name">お名前</Label>
+                        <Label htmlFor="name">お名前 <span className="text-red-500">*</span></Label>
                         <Input id="name" placeholder="山田 太郎" required />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="company">会社名（任意）</Label>
+                        <Label htmlFor="company">会社名</Label>
                         <Input id="company" placeholder="株式会社〇〇" />
                       </div>
                     </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="email">メールアドレス</Label>
-                      <Input id="email" type="email" placeholder="example@email.com" required />
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div className="space-y-2">
+                        <Label htmlFor="email">メールアドレス <span className="text-red-500">*</span></Label>
+                        <Input id="email" type="email" placeholder="example@email.com" required />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="tel">電話番号 <span className="text-red-500">*</span></Label>
+                        <Input id="tel" type="tel" placeholder="090-1234-5678" required />
+                      </div>
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="tel">電話番号</Label>
-                      <Input id="tel" type="tel" placeholder="090-1234-5678" required />
+                      <Label htmlFor="address">発電所住所</Label>
+                      <Input id="address" placeholder="大阪府〇〇市..." />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="message">お問い合わせ内容</Label>
-                      <Textarea id="message" placeholder="発電所の場所や面積、現在のお悩みなどをご記入ください。" className="min-h-[120px]" required />
+                      <Textarea id="message" placeholder="現在の状況やご要望などをご記入ください" className="min-h-[120px]" />
                     </div>
                     <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-full font-heading text-lg h-12" disabled={isSubmitting}>
                       {isSubmitting ? "送信中..." : "送信する"}
