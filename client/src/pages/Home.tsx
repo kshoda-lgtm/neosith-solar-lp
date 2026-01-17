@@ -27,7 +27,8 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <img src="/images/logo-ageful.png" alt="株式会社エイジフル" className="h-12 w-auto" />
             <div className="flex flex-col justify-center h-12">
-              <span className="text-[10px] text-muted-foreground font-medium leading-tight">株式会社ネオシス<br/>メンテナンス部門</span>
+              <span className="font-heading font-bold text-sm text-primary leading-tight">株式会社エイジフル</span>
+              <span className="text-[10px] text-muted-foreground font-medium leading-tight">株式会社ネオシス メンテナンス部門</span>
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
