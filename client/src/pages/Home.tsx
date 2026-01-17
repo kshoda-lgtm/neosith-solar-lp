@@ -61,10 +61,12 @@ export default function Home() {
             <div className="absolute inset-0 bg-black/30" />
           </div>
           <div className="container relative z-10 text-center text-white">
-            <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg" style={{color: '#54ff0a'}}>
-              太陽光発電の効率を、<br />
-              <span className="text-secondary">草刈り</span>で最大化する。
-            </h1>
+            <div className="inline-block bg-black/40 backdrop-blur-sm p-6 rounded-xl mb-6">
+              <h1 className="font-heading text-4xl md:text-6xl font-bold leading-tight drop-shadow-lg" style={{color: '#54ff0a'}}>
+                太陽光発電の効率を、<br />
+                <span className="text-secondary">草刈り</span>で最大化する。
+              </h1>
+            </div>
             <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md">
               雑草による発電量低下を防ぎ、資産価値を守ります。<br />
               年3回の定期管理で、いつでもクリーンな発電所へ。
