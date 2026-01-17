@@ -38,9 +38,9 @@ export default function Home() {
             <a href="#contact" className="hover:text-primary transition-colors">お問い合わせ</a>
           </nav>
           <div className="flex items-center gap-4">
-            <a href="tel:09066759022" className="hidden md:flex items-center gap-2 text-primary font-bold">
+            <a href="tel:0666849484" className="hidden md:flex items-center gap-2 text-primary font-bold">
               <Phone className="h-4 w-4" />
-              090-6675-9022
+              06-6684-9484
             </a>
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full font-heading" asChild>
               <a href="#contact">無料見積もり</a>
@@ -305,8 +305,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="text-sm opacity-80">お電話でのお問い合わせ</p>
-                      <a href="tel:09066759022" className="text-2xl font-bold hover:text-secondary transition-colors">090-6675-9022</a>
-                      <p className="text-sm opacity-80 mt-1">固定電話: 06-6684-9483</p>
+                      <a href="tel:0666849484" className="text-2xl font-bold hover:text-secondary transition-colors">06-6684-9484</a>
                     </div>
                   </div>
                   
@@ -316,7 +315,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="text-sm opacity-80">メールでのお問い合わせ</p>
-                      <a href="mailto:info@neosith.co.jp" className="text-xl font-bold hover:text-secondary transition-colors">info@neosith.co.jp</a>
+                      <a href="mailto:info.support@ageful.co.jp" className="text-xl font-bold hover:text-secondary transition-colors">info.support@ageful.co.jp</a>
                     </div>
                   </div>
                 </div>
@@ -392,9 +391,9 @@ export default function Home() {
               <h4 className="font-bold text-white mb-4">会社情報</h4>
               <ul className="space-y-2 text-sm">
                 <li>株式会社エイジフル</li>
-                <li>Tel: 06-6684-9483</li>
-                <li>Mobile: 090-6675-9022</li>
-                <li>Email: info@neosith.co.jp</li>
+                <li><a href="http://neosith.co.jp" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-xs flex items-center gap-1 mt-1">関連会社: 株式会社ネオシス <ArrowRight className="h-3 w-3" /></a></li>
+                <li>Tel: 06-6684-9484</li>
+                <li>Email: info.support@ageful.co.jp</li>
               </ul>
             </div>
           </div>
