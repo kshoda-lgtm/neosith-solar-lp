@@ -61,7 +61,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-black/30" />
           </div>
           <div className="container relative z-10 text-center text-white">
-            <div className="inline-block bg-white/40 backdrop-blur-md border border-white/50 p-8 rounded-xl mb-6 shadow-2xl">
+            <div className="inline-block bg-white/20 backdrop-blur-md border border-white/50 p-8 rounded-xl mb-6 shadow-2xl">
               <h1 className="font-heading text-4xl md:text-6xl font-bold leading-tight text-white drop-shadow-md">
                 太陽光発電の効率を、<br />
                 <span className="text-[#54ff0a] drop-shadow-md">草刈り</span>で最大化する。
