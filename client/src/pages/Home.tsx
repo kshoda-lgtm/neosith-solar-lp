@@ -26,7 +26,10 @@ export default function Home() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <Sun className="h-6 w-6 text-secondary" />
-            <span className="font-heading font-bold text-xl text-primary">株式会社ネオシス</span>
+            <div className="flex flex-col">
+              <span className="font-heading font-bold text-xl text-primary leading-none">株式会社エイジフル</span>
+              <span className="text-[10px] text-muted-foreground font-medium">株式会社ネオシス メンテナンス部門</span>
+            </div>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
             <a href="#problem" className="hover:text-primary transition-colors">除草の重要性</a>
@@ -149,7 +152,7 @@ export default function Home() {
           <div className="container relative z-10">
             <div className="text-center mb-16">
               <span className="text-primary font-bold tracking-wider uppercase text-sm">Our Solution</span>
-              <h2 className="font-heading text-3xl md:text-4xl font-bold mt-2 mb-4">ネオシスの除草サービス</h2>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold mt-2 mb-4">エイジフルの除草サービス</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 手作業による丁寧な草刈りと、効果的な除草剤散布を組み合わせた<br />
                 最適なメンテナンスプランをご提案します。
@@ -365,7 +368,10 @@ export default function Home() {
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
                 <Sun className="h-6 w-6 text-secondary" />
-                <span className="font-heading font-bold text-xl text-white">株式会社ネオシス</span>
+                <div className="flex flex-col">
+                <span className="font-heading font-bold text-xl text-white leading-none">株式会社エイジフル</span>
+                <span className="text-xs text-gray-400 mt-1">株式会社ネオシス メンテナンス部門</span>
+              </div>
               </div>
               <p className="mb-4 text-sm leading-relaxed">
                 太陽光発電所の除草・管理を通じて、<br />
@@ -385,7 +391,7 @@ export default function Home() {
             <div>
               <h4 className="font-bold text-white mb-4">会社情報</h4>
               <ul className="space-y-2 text-sm">
-                <li>株式会社ネオシス</li>
+                <li>株式会社エイジフル</li>
                 <li>Tel: 06-6684-9483</li>
                 <li>Mobile: 090-6675-9022</li>
                 <li>Email: info@neosith.co.jp</li>
@@ -393,7 +399,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-xs">
-            <p>&copy; {new Date().getFullYear()} Neosith Co., Ltd. All Rights Reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Ageful Co., Ltd. All Rights Reserved.</p>
           </div>
         </div>
       </footer>
