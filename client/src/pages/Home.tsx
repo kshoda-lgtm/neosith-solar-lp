@@ -88,7 +88,7 @@ export default function Home() {
               <span className="text-primary font-bold tracking-wider uppercase text-sm">Problem</span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold mt-2 mb-4">こんなお悩みありませんか？</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                太陽光発電所の管理において、雑草は最大の敵です。放置することで様々なリスクが発生します。
+                太陽光発電所の管理において、雑草は最大の敵です。　　　　　　　　　　　　　　　　　　放置することで様々なリスクが発生します。
               </p>
             </div>
 
