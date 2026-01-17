@@ -373,7 +373,7 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
-                <img src="/images/logo-ageful.png" alt="株式会社エイジフル" className="h-12 w-auto brightness-0 invert" />
+                <img src="/images/logo-ageful.png" alt="株式会社エイジフル" className="h-12 w-auto bg-white/90 rounded px-1 py-0.5" />
                 <div className="flex flex-col justify-center h-12">
                   <span className="font-heading font-bold text-lg text-white leading-tight">株式会社エイジフル</span>
                   <span className="text-[10px] text-gray-400 font-medium leading-tight">株式会社ネオシス<br/>メンテナンス部門</span>
