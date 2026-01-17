@@ -231,7 +231,7 @@ export default function Home() {
           <div className="container">
             <div className="text-center mb-16">
               <span className="text-primary font-bold tracking-wider uppercase text-sm">Price Plan</span>
-              <h2 className="font-heading text-3xl md:text-4xl font-bold mt-2 mb-4">シンプルで明確な料金設定</h2>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold mt-2 mb-4">シンプルで明瞭な料金設定</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 追加費用の心配がない、安心のパッケージプランをご用意しました。
               </p>
@@ -249,7 +249,7 @@ export default function Home() {
                     <div className="text-5xl font-bold text-primary mb-2">
                       80,000<span className="text-xl font-normal text-muted-foreground">円</span>
                     </div>
-                    <p className="text-sm text-muted-foreground">（税込 / 年間）</p>
+                    <p className="text-sm text-muted-foreground">（税別 / 年間）</p>
                   </div>
                   <div className="p-8">
                     <ul className="space-y-4">
@@ -267,7 +267,8 @@ export default function Home() {
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span>近隣クレーム対応サポート</span>
+                        <span>関東、中部、関西、中国、四国、九州
+エリア対応</span>
                       </li>
                     </ul>
                     <div className="mt-8">
