@@ -63,13 +63,13 @@ export default function Home() {
           <div className="container relative z-10 text-center text-white">
             <div className="inline-block relative p-12 mb-6">
               <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.2)_0%,_rgba(255,255,255,0)_70%)] backdrop-blur-[2px] rounded-full pointer-events-none"></div>
-              <h1 className="relative z-10 font-heading text-4xl md:text-6xl font-bold leading-tight text-white drop-shadow-md">
-                太陽光発電の効率を、<br />
+              <h1 className="relative z-10 font-heading text-4xl md:text-6xl font-bold leading-tight text-white drop-shadow-md [word-break:auto-phrase]">
+                太陽光発電の効率を、<br className="hidden md:inline" />
                 <span className="text-[#54ff0a] drop-shadow-md">草刈り</span>で最大化する。
               </h1>
             </div>
-            <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md">
-              雑草による発電量低下を防ぎ、資産価値を守ります。<br />
+            <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md [word-break:auto-phrase]">
+              雑草による発電量低下を防ぎ、資産価値を守ります。<br className="hidden md:inline" />
               年3回の定期管理で、いつでもクリーンな発電所へ。
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -90,7 +90,7 @@ export default function Home() {
             <div className="text-center mb-16">
               <span className="text-primary font-bold tracking-wider uppercase text-sm">Problem</span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold mt-2 mb-4">こんなお悩みありませんか？</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed [word-break:auto-phrase]">
                 太陽光発電所の管理において、雑草は最大の敵です。<br className="hidden md:inline" />
                 放置することで様々なリスクが発生します。
               </p>
@@ -157,8 +157,8 @@ export default function Home() {
             <div className="text-center mb-16">
               <span className="text-primary font-bold tracking-wider uppercase text-sm">Our Solution</span>
               <h2 className="font-heading text-3xl md:text-4xl font-bold mt-2 mb-4">エイジフルの除草サービス</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                手作業による丁寧な草刈りと、効果的な除草剤散布を組み合わせた<br />
+              <p className="text-muted-foreground max-w-2xl mx-auto [word-break:auto-phrase]">
+                手作業による丁寧な草刈りと、効果的な除草剤散布を組み合わせた<br className="hidden md:inline" />
                 最適なメンテナンスプランをご提案します。
               </p>
             </div>
