@@ -255,11 +255,7 @@ export default function Home() {
                     <ul className="space-y-4">
                       <li className="flex items-start gap-3">
                         <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span>年3回の草刈り作業</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                        <span>除草剤の散布込み</span>
+                        <span>年3回の草刈り作業・除草剤の散布</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
