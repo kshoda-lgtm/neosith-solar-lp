@@ -64,8 +64,8 @@ export default function Home() {
             <div className="inline-block relative p-12 mb-6">
               <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.2)_0%,_rgba(255,255,255,0)_70%)] backdrop-blur-[2px] rounded-full pointer-events-none"></div>
               <h1 className="relative z-10 font-heading text-4xl md:text-6xl font-bold leading-tight text-white drop-shadow-md">
-                <span className="inline-block">太陽光発電の</span><span className="inline-block">効率を、</span><br className="hidden md:inline" />
-                <span className="inline-block"><span className="text-[#54ff0a] drop-shadow-md">草刈り</span>で</span><span className="inline-block">最大化する。</span>
+                <span className="inline-block">太陽光発電の効率を、</span><br />
+                <span className="inline-block"><span className="text-[#54ff0a] drop-shadow-md">草刈り</span>で最大化する。</span>
               </h1>
             </div>
             <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md">
@@ -241,7 +241,10 @@ export default function Home() {
           <div className="container">
             <div className="text-center mb-16">
               <span className="text-primary font-bold tracking-wider uppercase text-sm">Price Plan</span>
-              <h2 className="font-heading text-3xl md:text-4xl font-bold mt-2 mb-4">シンプルで明瞭な料金設定</h2>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold mt-2 mb-4">
+                <span className="inline-block">シンプルで明瞭な</span>
+                <span className="inline-block">料金設定</span>
+              </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
                 追加費用の心配がない、安心のパッケージプランをご用意しました。
               </p>
