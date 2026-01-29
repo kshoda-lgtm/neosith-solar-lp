@@ -377,7 +377,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-[#ffdb8f] text-muted-foreground py-12 border-t border-[#e6e6da]">
+      <footer className="bg-muted/30 text-muted-foreground py-12 border-t border-border">
         <div className="container">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div className="col-span-1 md:col-span-2">
