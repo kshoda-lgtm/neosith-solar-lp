@@ -1,3 +1,4 @@
+import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -5,18 +6,52 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { CheckCircle2, Leaf, Phone, ShieldCheck, Sun, AlertTriangle, ArrowRight } from "lucide-react";
 import { useState } from "react";
+import { trpc } from "@/lib/trpc";
+import { toast } from "sonner";
 
 export default function Home() {
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  // The userAuth hooks provides authentication state
+  // To implement login/logout functionality, simply call logout() or redirect to getLoginUrl()
+  let { user, loading, error, isAuthenticated, logout } = useAuth();
+
+  // フォームの状態管理
+  const [formData, setFormData] = useState({
+    name: "",
+    company: "",
+    email: "",
+    tel: "",
+    address: "",
+    message: "",
+  });
+
+  // お問い合わせ送信のmutation
+  const contactMutation = trpc.contact.submit.useMutation({
+    onSuccess: (data) => {
+      toast.success(data.message);
+      // フォームをリセット
+      setFormData({
+        name: "",
+        company: "",
+        email: "",
+        tel: "",
+        address: "",
+        message: "",
+      });
+    },
+    onError: (error) => {
+      toast.error("送信に失敗しました。もう一度お試しください。");
+      console.error("Contact form error:", error);
+    },
+  });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      alert("お問い合わせありがとうございます。担当者よりご連絡いたします。");
-    }, 1500);
+    contactMutation.mutate(formData);
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
+    setFormData((prev) => ({ ...prev, [id]: value }));
   };
 
   return (
@@ -340,34 +375,34 @@ export default function Home() {
                     <div className="grid md:grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <Label htmlFor="name">お名前 <span className="text-red-500">*</span></Label>
-                        <Input id="name" placeholder="山田 太郎" required />
+                        <Input id="name" placeholder="山田 太郎" required value={formData.name} onChange={handleInputChange} />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="company">会社名</Label>
-                        <Input id="company" placeholder="株式会社〇〇" />
+                        <Input id="company" placeholder="株式会社〇〇" value={formData.company} onChange={handleInputChange} />
                       </div>
                     </div>
                     <div className="grid md:grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <Label htmlFor="email">メールアドレス <span className="text-red-500">*</span></Label>
-                        <Input id="email" type="email" placeholder="example@email.com" required />
+                        <Input id="email" type="email" placeholder="example@email.com" required value={formData.email} onChange={handleInputChange} />
                       </div>
                       <div className="space-y-2">
                         <Label htmlFor="tel">電話番号 <span className="text-red-500">*</span></Label>
-                        <Input id="tel" type="tel" placeholder="090-1234-5678" required />
+                        <Input id="tel" type="tel" placeholder="090-1234-5678" required value={formData.tel} onChange={handleInputChange} />
                       </div>
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="address">発電所住所</Label>
-                      <Input id="address" placeholder="大阪府〇〇市..." />
+                      <Input id="address" placeholder="大阪府〇〇市..." value={formData.address} onChange={handleInputChange} />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="message">お問い合わせ内容</Label>
-                      <Textarea id="message" placeholder="現在の状況やご要望などをご記入ください" className="min-h-[120px]" />
+                      <Textarea id="message" placeholder="現在の状況やご要望などをご記入ください" className="min-h-[120px]" value={formData.message} onChange={handleInputChange} />
                     </div>
-                    <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-full font-heading text-lg h-12" disabled={isSubmitting}>
-                      {isSubmitting ? "送信中..." : "送信する"}
-                      {!isSubmitting && <ArrowRight className="ml-2 h-5 w-5" />}
+                    <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-full font-heading text-lg h-12" disabled={contactMutation.isPending}>
+                      {contactMutation.isPending ? "送信中..." : "送信する"}
+                      {!contactMutation.isPending && <ArrowRight className="ml-2 h-5 w-5" />}
                     </Button>
                   </form>
                 </CardContent>
