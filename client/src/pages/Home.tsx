@@ -296,36 +296,36 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-20 bg-primary text-primary-foreground relative overflow-hidden">
+        <section id="contact" className="py-20 bg-[#e8f5e9] text-foreground relative overflow-hidden">
           <div className="absolute inset-0 opacity-10 pattern-grid-lg"></div>
           <div className="container relative z-10">
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <span className="font-bold tracking-wider uppercase text-sm opacity-80">Contact Us</span>
-                <h2 className="font-heading text-3xl md:text-4xl font-bold mt-2 mb-6">お問い合わせ・お見積り</h2>
-                <p className="text-lg opacity-90 mb-8">
+                <span className="font-bold tracking-wider uppercase text-sm text-primary">Contact Us</span>
+                <h2 className="font-heading text-3xl md:text-4xl font-bold mt-2 mb-6 text-primary">お問い合わせ・お見積り</h2>
+                <p className="text-lg text-muted-foreground mb-8">
                   発電所の除草に関するご相談、お見積りは無料です。<br />
                   お急ぎの方はお電話でも承っております。
                 </p>
                 
                 <div className="space-y-6">
-                  <div className="flex items-center gap-4 bg-white/10 p-4 rounded-xl backdrop-blur-sm">
+                  <div className="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm">
                     <div className="bg-secondary p-3 rounded-full text-secondary-foreground">
                       <Phone className="h-6 w-6" />
                     </div>
                     <div>
-                      <p className="text-sm opacity-80">お電話でのお問い合わせ</p>
-                      <a href="tel:05071168033" className="text-2xl font-bold hover:text-secondary transition-colors">050-7116-8033</a>
+                      <p className="text-sm text-muted-foreground">お電話でのお問い合わせ</p>
+                      <a href="tel:05071168033" className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors">050-7116-8033</a>
                     </div>
                   </div>
                   
-                  <div className="flex items-center gap-4 bg-white/10 p-4 rounded-xl backdrop-blur-sm">
+                  <div className="flex items-center gap-4 bg-white p-4 rounded-xl shadow-sm">
                     <div className="bg-secondary p-3 rounded-full text-secondary-foreground">
                       <Leaf className="h-6 w-6" />
                     </div>
                     <div>
-                      <p className="text-sm opacity-80">メールでのお問い合わせ</p>
-                      <a href="mailto:info.support@ageful.co.jp" className="text-xl font-bold hover:text-secondary transition-colors">info.support@ageful.co.jp</a>
+                      <p className="text-sm text-muted-foreground">メールでのお問い合わせ</p>
+                      <a href="mailto:info.support@ageful.co.jp" className="text-xl font-bold text-primary hover:text-primary/80 transition-colors">info.support@ageful.co.jp</a>
                     </div>
                   </div>
                 </div>
