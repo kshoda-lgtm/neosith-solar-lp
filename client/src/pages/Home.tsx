@@ -25,7 +25,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src="/images/logo-ageful.png" alt="株式会社エイジフル" className="h-12 w-auto" />
+            <img src="/images/logo-ageful-transparent.png" alt="株式会社エイジフル" className="h-12 w-auto" />
             <div className="flex flex-col justify-center h-12">
               <span className="font-heading font-bold text-sm text-primary leading-tight">株式会社エイジフル</span>
               <span className="text-[10px] text-muted-foreground font-medium leading-tight">株式会社ネオシス メンテナンス部門</span>
@@ -38,9 +38,9 @@ export default function Home() {
             <a href="#contact" className="hover:text-primary transition-colors">お問い合わせ</a>
           </nav>
           <div className="flex items-center gap-4">
-            <a href="tel:0666849484" className="hidden md:flex items-center gap-2 text-primary font-bold">
+            <a href="tel:05071168033" className="hidden md:flex items-center gap-2 text-primary font-bold">
               <Phone className="h-4 w-4" />
-              06-6684-9484
+              050-7116-8033
             </a>
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-full font-heading" asChild>
               <a href="#contact">無料見積もり</a>
@@ -315,7 +315,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="text-sm opacity-80">お電話でのお問い合わせ</p>
-                      <a href="tel:0666849484" className="text-2xl font-bold hover:text-secondary transition-colors">06-6684-9484</a>
+                      <a href="tel:05071168033" className="text-2xl font-bold hover:text-secondary transition-colors">050-7116-8033</a>
                     </div>
                   </div>
                   
@@ -408,7 +408,7 @@ export default function Home() {
               <ul className="space-y-2 text-sm">
                 <li>株式会社エイジフル</li>
                 <li><a href="http://neosith.co.jp" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-xs flex items-center gap-1 mt-1">関連会社: 株式会社ネオシス <ArrowRight className="h-3 w-3" /></a></li>
-                <li>Tel: 06-6684-9484</li>
+                <li>Tel: 050-7116-8033</li>
                 <li>Email: info.support@ageful.co.jp</li>
               </ul>
             </div>
