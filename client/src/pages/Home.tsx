@@ -377,15 +377,15 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-gray-900 text-gray-400 py-12">
+      <footer className="bg-muted/30 text-muted-foreground py-12 border-t">
         <div className="container">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
-                <img src="/images/logo-ageful.png" alt="株式会社エイジフル" className="h-12 w-auto bg-white/90 rounded px-1 py-0.5" />
+                <img src="/images/logo-ageful-transparent.png" alt="株式会社エイジフル" className="h-12 w-auto" />
                 <div className="flex flex-col justify-center h-12">
-                  <span className="font-heading font-bold text-lg text-white leading-tight">株式会社エイジフル</span>
-                  <span className="text-[10px] text-gray-400 font-medium leading-tight">株式会社ネオシス<br/>メンテナンス部門</span>
+                  <span className="font-heading font-bold text-lg text-primary leading-tight">株式会社エイジフル</span>
+                  <span className="text-[10px] text-muted-foreground font-medium leading-tight">株式会社ネオシス<br/>メンテナンス部門</span>
                 </div>
               </div>
               <p className="mb-4 text-sm leading-relaxed">
@@ -395,25 +395,25 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <h4 className="font-bold text-white mb-4">メニュー</h4>
+              <h4 className="font-bold text-foreground mb-4">メニュー</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-white transition-colors">トップページ</a></li>
-                <li><a href="#problem" className="hover:text-white transition-colors">除草の重要性</a></li>
-                <li><a href="#service" className="hover:text-white transition-colors">サービス内容</a></li>
-                <li><a href="#price" className="hover:text-white transition-colors">料金プラン</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">トップページ</a></li>
+                <li><a href="#problem" className="hover:text-primary transition-colors">除草の重要性</a></li>
+                <li><a href="#service" className="hover:text-primary transition-colors">サービス内容</a></li>
+                <li><a href="#price" className="hover:text-primary transition-colors">料金プラン</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-white mb-4">会社情報</h4>
+              <h4 className="font-bold text-foreground mb-4">会社情報</h4>
               <ul className="space-y-2 text-sm">
                 <li>株式会社エイジフル</li>
-                <li><a href="http://neosith.co.jp" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-xs flex items-center gap-1 mt-1">関連会社: 株式会社ネオシス <ArrowRight className="h-3 w-3" /></a></li>
+                <li><a href="http://neosith.co.jp" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary text-xs flex items-center gap-1 mt-1">関連会社: 株式会社ネオシス <ArrowRight className="h-3 w-3" /></a></li>
                 <li>Tel: 050-7116-8033</li>
                 <li>Email: info.support@ageful.co.jp</li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 pt-8 text-center text-xs">
+          <div className="border-t border-border pt-8 text-center text-xs">
             <p>&copy; {new Date().getFullYear()} Ageful Co., Ltd. All Rights Reserved.</p>
           </div>
         </div>
