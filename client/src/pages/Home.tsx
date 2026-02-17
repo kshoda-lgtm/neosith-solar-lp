@@ -89,7 +89,7 @@ export default function Home() {
         <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img 
-              src="/images/hero_clean.png" 
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663204043103/FePBgqOvQCUCHTeC.png" 
               alt="美しく管理された太陽光発電所" 
               className="w-full h-full object-cover"
             />
@@ -137,7 +137,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <img 
-                  src="/images/problem_overgrown.png" 
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663204043103/CDsqbZtVYDoMrvsm.png" 
                   alt="雑草が生い茂った太陽光発電所" 
                   className="w-full h-full object-cover"
                 />
@@ -208,7 +208,7 @@ export default function Home() {
               <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
                 <div className="h-48 overflow-hidden">
                   <img 
-                    src="/images/worker_trimming.png" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663204043103/XFuBlGzHvFKsLVvT.png" 
                     alt="丁寧な手作業による草刈り" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -229,7 +229,7 @@ export default function Home() {
               <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
                 <div className="h-48 overflow-hidden">
                   <img 
-                    src="/images/herbicide_spray.png" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663204043103/xgZyYlCYRNuCBKJw.png" 
                     alt="効果的な除草剤散布" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -250,7 +250,7 @@ export default function Home() {
               <Card className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group">
                 <div className="h-48 overflow-hidden">
                   <img 
-                    src="/images/before_after_comparison.png" 
+                    src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663204043103/OKPAJPFGKdsfmYOh.png" 
                     alt="年3回の定期管理" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
